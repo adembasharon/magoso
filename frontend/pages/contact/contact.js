@@ -6,6 +6,7 @@ import school from "../../public/images/schoolOverview.jpg"
 const Contact=()=>{
     return(
         <>
+        
 {/* <div>
     <div>
         <div className={styles.contact_nav_image}>

@@ -23,7 +23,7 @@ const ContactInfo=()=>{
     <div className={styles.contact_nav_text}>
     <h4>GET IN TOUCH    </h4>
     <div className={styles.contact_paragraph}>
-    <h5>W'D LOVE TO HEAR FROM YOU</h5>
+    {/* <h5>W'D LOVE TO HEAR FROM YOU</h5> */}
     <p>If you have any questions, please feel free to drop a line, We're here to answer any question.  </p>
     </div>
     </div>
