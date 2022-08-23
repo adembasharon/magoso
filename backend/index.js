@@ -14,7 +14,9 @@ console.log("DB connected")
     console.log(err)
 })
 
-app.use("/api",mpesaRoutes)
+app.use(express.json())
+app.use("/api",mpesaRoutes);
+
 app.listen(port,()=>{
     console.log(`application is running on port ${port}`)
 })
