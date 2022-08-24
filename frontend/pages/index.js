@@ -1,3 +1,4 @@
+
 import Head from 'next/head'
 import Footer from './components/footer'
 import Nav from './components/nav'
@@ -24,6 +25,17 @@ export default function Home() {
   
     </div>
 
+
+
+import ContactInfo from "./contact/contactInfo";
+import Contact from "./contact/contact"
+export default function Home() {
+  return (
+    <div>
+<Contact/>
+<ContactInfo/>
+    </div>
+    
 
   )
 }
