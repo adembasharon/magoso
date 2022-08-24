@@ -1,8 +1,9 @@
-import React from 'react'
-import Image from 'next/image'
-import img2 from "../../../magosoimg/credo.png"
+import React,{useState} from 'react'
+import Payment from './Payment/Payment'
 import styles from "./Donation.module.css"
 const Donation = () => {
+  const [amount,setAmount]=useState(0)
+
   return (
     <div className={styles.flex}>
       <div className={styles.img}>
@@ -57,7 +58,10 @@ const Donation = () => {
 </div>
 
 <div>
-<input type="number" placeholder='customize' className={styles.inputcustomize}/>
+<input type="number" placeholder='customize' className={styles.inputcustomize} 
+onChange={(e)=>setAmount(e.target.value)}
+
+/>
 </div>
 
 </div>
@@ -67,40 +71,16 @@ const Donation = () => {
 <h2>Payment Method</h2>
 </div>
 <div className={styles.payment}>
-  <div>
-    <input type="radio"/>
-    </div>
-    <div>
-    <Image src={img2} width={"20px"} height={"19px"}/>
-    </div>
-    <div>
-    <p>Credit/Bank</p>
-    </div>
+  <Payment amount={amount} setAmount={setAmount}/>
 </div>
 
 <div className={styles.payment}>
-  <div>
-    <input type="radio"/>
-    </div>
-    <div>
-    <Image src={img2} width={"20px"} height={"19px"}/>
-    </div>
-    <div>
-    <p>Mpesa</p>
-    </div>
+  
 </div>
 
 
 <div className={styles.payment}>
-  <div>
-    <input type="radio"/>
-    </div>
-    <div>
-    <Image src={img2} width={"20px"} height={"19px"}/>
-    </div>
-    <div>
-    <p>PayPal</p>
-    </div>
+  
 </div>
 </div>
 
