@@ -89,8 +89,8 @@ const Contact=()=>{
 </div>
 </div>
 </div>
-
-<div className={styles.contact_text_res}>
+{/* rettujkjdhdhgdjdjdhdh */}
+<div>
     <div className={styles.contact_textArea}>
     <textarea placeholder="WRITE YOUR MESSAGE"/>
     </div>
