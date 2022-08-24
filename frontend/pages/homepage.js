@@ -1,20 +1,25 @@
 import React from "react";
 import styled from 'styled-components';
 import Image from "next/image";
-// import Img1 from "/public/images/1.jpg"
 import Img1 from "../public/images/1.jpg"
-
-
 const Container =styled.div`
-background:red;
-width:100%;
-height:100vh
-
+width:100%
 `
 const SliderHolder=styled.div`
-width:100%;
-background:red;
+width:100%
 `
+const Moto=styled.div`
+width:30%;
+background:blue;
+`
+const Motoholder=styled.div`
+display:flex;
+align-items:center;
+justify-content:space-around;
+margin:2em;
+padding:2em
+`
+
 
 const Homepage = ()=>{
         return(
@@ -120,7 +125,7 @@ const Homepage = ()=>{
 
         <div className="carousel-item myimages">
           <img
-            src="../images/1.jpg"
+            src="../images/5.jpg"
             className="d-block w-100"
             alt="..."
           />
@@ -167,6 +172,23 @@ const Homepage = ()=>{
       </button>
     </SliderHolder>
 
+<Motoholder>
+<Moto>
+<h1>Hello sam</h1>
+
+</Moto>
+
+<Moto>
+<h1>Hello sam</h1>
+
+</Moto>
+
+<Moto>
+<h1>Hello sam</h1>
+
+</Moto>
+
+</Motoholder>
 
 
 

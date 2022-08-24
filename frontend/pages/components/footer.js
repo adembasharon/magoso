@@ -2,46 +2,43 @@ import React from "react";
 import styled from "styled-components";
 
 const Footerconteiner=styled.div`
-background:blue;
-
+background:#000;
+color:#fff;
+width:100%;
+padding:2em
 `
 const Infor =styled.div`
-background:red;
-padding:2em;
-margin:1em;
-width:90%;
+width:40%;
+
 `
 const Footerdisplay =styled.div`
 display:flex;
-width:100%;
-
-
-
+justify-content:space-around;
+width:80%;
+margin:0 auto;
 `
 const FooterUl=styled.div`
-width:100%;
-display:flex;
-justify-content:space-around;
+
 `
 
 const Footer = ()=>{
     return (
         <Footerconteiner>
 
+
 <Footerdisplay>
-            <div>
+          
             <Infor>
             <p>This is a school home founded by two women with an aim to help the slum kids who are orphans,homeless and have been abandoned and negleted 
 by the  society,Therefore in Magoso many kids in kibera find peace and hoping for good future.</p>
-            </Infor>
+          
             
-            <Infor>
+            
             <p>The google map.</p>
-            </Infor>
+        </Infor>
 
-            </div>
 
-<FooterUl>
+
 <div className="footerul">
 
 <ul>
@@ -83,11 +80,13 @@ by the  society,Therefore in Magoso many kids in kibera find peace and hoping fo
     
 </ul>
 <button className="donation-btn">Donation</button>
+
 </div>
 
-</FooterUl>
 
 </Footerdisplay>
+
+
         </Footerconteiner>
     )}
 

@@ -3,6 +3,10 @@
   margin: 0;
   box-sizing:border-box
 }
+
+body{
+
+}
 .navlinks{
   display: flex;
   justify-content: space-between;
@@ -25,14 +29,27 @@
 }
 
 .footerul ul li{
-  font-size: 1rem;
+  font-size: .8rem;
   list-style-type: none;
   line-height: 3em;
   cursor: pointer;
 }
 
+
 .donation-btn{
   padding: .5em;
   width: 100%;
+  border-radius:10px;
+  border:none
+}
+
+.myimages{
+  height:80vh;
+  width:100%
+}
+
+.myimages img{
+  height:100%h;
+  width:100%
 }
 

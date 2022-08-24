@@ -1,5 +1,5 @@
 import React from "react";
-import styled from "styled-components";
+import styled from "styled-components"
 
 const Navconteiner=styled.div`
 width:100%;
@@ -17,7 +17,6 @@ return(
     <Navconteiner className="nav">
 <ul className="navlinks">
     <Logo>
-
     </Logo>
     <li><a>Home</a></li>
     <li><a>OB-OG</a></li>
@@ -25,6 +24,7 @@ return(
     <li><a>About us</a></li>
     <li><a>Donation</a></li>
     <li><a>Choose Language</a></li>
+    
 </ul>
     </Navconteiner>
 )
