@@ -1,6 +1,6 @@
 
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
 import Donation from './api/components/Donation'
 // import styles from '../styles/Home.module.css'
 
@@ -17,15 +17,6 @@ export default function Home() {
       </div>
 
 
-import ContactInfo from "./contact/contactInfo";
-import Contact from "./contact/contact"
-export default function Home() {
-  return (
-    <div>
-<Contact/>
-<ContactInfo/>
-
-    </div>
-    
-  )
-}
+</div>
+)
+  }
