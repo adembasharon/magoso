@@ -1,36 +1,48 @@
 import React,{useState} from 'react'
 import Payment from './Payment/Payment'
 import styles from "./Donation.module.css"
+
 const Donation = () => {
   const [amount,setAmount]=useState(0)
+  const [formData,setFormData]=useState({
+phone:"",
+amount:""
+
+  })
+
+
 
   return (
     <div className={styles.flex}>
+
+   
       <div className={styles.img}>
       
+
         <div className={styles.border}>
+        <h2 className={styles.title}>DONATE TO MAGOSO PRIMARY SCHOOL</h2>
           <div className={styles.align}>
           <div className={styles.credential1}>
             <div className={styles.column}>
-<label>First Name</label>
-<input type="text" className={styles.input1}/>
+{/* <label>First Name</label> */}
+<input type="text" className={styles.input1} placeholder="First Name"/>
 </div>
 
 <div className={styles.column}>
-<label>Last Name</label>
-<input type="text" className={styles.input1}/>
+{/* <label>Last Name</label> */}
+<input type="text" className={styles.input1} placeholder="Last Name"/>
 </div>
 </div>
 
 <div className={styles.credential2}>
 <div className={styles.column}>
-<label>Email</label>
-<input type="currency" className={styles.input1}/>
+{/* <label>Email</label> */}
+<input type="currency" className={styles.input1} placeholder="Email"/>
 </div>
 
 <div className={styles.column}>
-<label>Contact</label>
-<input type="number" className={styles.input1}/>
+{/* <label>Contact</label> */}
+<input type="number" className={styles.input1} placeholder="Contact"/>
 </div>
 
 </div>
@@ -68,14 +80,16 @@ onChange={(e)=>setAmount(e.target.value)}
 
 <div className={styles.gateway}>
 <div>
-<h2>Payment Method</h2>
+<h2 className={styles.heading1}>Payment Method</h2>
 </div>
 <div className={styles.payment}>
-  <Payment amount={amount} setAmount={setAmount}/>
+<button className={styles.mpesa}>Mpesa</button>
+
 </div>
 
 <div className={styles.payment}>
-  
+  <Payment amount={amount} setAmount={setAmount}/>
+
 </div>
 
 

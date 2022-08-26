@@ -1,0 +1,31 @@
+
+
+
+
+.bgcontact{
+    background: url("../../../../magosoimg/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    width: 100vw;
+    height: 60vh;
+    position: relative;
+   
+}
+
+.contact{
+  position: absolute;
+  top: 60%;
+  margin-left: 2em;
+  border: solid 1px black;
+  padding: 1em 5em;
+  color:white;
+  font-size: 2rem;
+  background-color: rgba(0,0,0.1);
+  opacity: .7;
+   
+}
+
+.contactus{
+  
+}

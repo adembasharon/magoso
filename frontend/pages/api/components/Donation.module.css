@@ -1,10 +1,12 @@
 .img{
-    background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)), url("../../../magosoimg/carosel.jpg");
+    background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../../../magosoimg/1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     width: 100vw;
     height: 100vh;
+    width: 100%;
+    height: 100%;
 }
 .flex{
     display: flex;
@@ -31,6 +33,9 @@
 }
 .input1{
     padding: .9em  2em;
+    /* border: none; */
+    outline: none;
+    border: solid 1px maroon;
 }
 
 .button1{
@@ -42,7 +47,11 @@
 }
 
 .btn1{
-    padding: 1em 5em;
+    padding: 1em 2em;
+   margin: 0 .2em;
+   background-color: maroon;
+   border: none;
+   color: white;
 }
 .customize{
     display: flex;
@@ -80,15 +89,33 @@
 .payment{
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: .8em;
 }
+
+.heading1{
+    text-align: center;
+}
+.title{
+    text-align: center;
+    font-size: 1.9rem;
+    color:maroon;
+}
 .border{
-    padding: 3em 0;
-    border: solid 2px black;
+    padding: 2em 2em;
     border: none;
-    box-shadow: 2px 2px 2px 2px lightgray;
-    background-color: white;
+    box-shadow: 1px 1px 1px 1px lightgray;
+    background-color:rgba(255,255,255,.7);
     width: 50%;
     margin: 2em 2em;
     
+}
+
+.mpesa{
+    padding: .8em 6em;
+    margin: 1em 0;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 1px;
 }
