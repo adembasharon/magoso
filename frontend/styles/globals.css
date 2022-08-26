@@ -4,9 +4,9 @@
   box-sizing:border-box
 }
 
-body{
+/* body{
 
-}
+} */
 .navlinks{
   display: flex;
   justify-content: space-between;
@@ -53,3 +53,8 @@ body{
   width:100%
 }
 
+
+.founder{
+width: 10%;
+height: 20%;
+}
