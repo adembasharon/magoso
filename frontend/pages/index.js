@@ -1,9 +1,9 @@
 
 import Head from 'next/head'
-// import Image from 'next/image'
+
 import Donation from './api/components/Donation'
 import Contact from './api/components/Contact/Contact'
-// import styles from '../styles/Home.module.css'
+
 
 export default function Home() {
   return (
