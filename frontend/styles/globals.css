@@ -4,9 +4,7 @@
   box-sizing:border-box
 }
 
-body{
 
-}
 .navlinks{
   display: flex;
   justify-content: space-between;

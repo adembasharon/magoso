@@ -1,7 +1,6 @@
 
 
 
-
 .bgcontact{
     background: url("../../../../magosoimg/1.jpg");
     background-repeat: no-repeat;
@@ -10,6 +9,7 @@
     width: 100vw;
     height: 60vh;
     position: relative;
+    overflow: hidden;
    
 }
 
@@ -26,3 +26,82 @@
    
 }
 
+.textarea{
+  padding: .9em 3em;
+  margin: 1.8em 0;
+  outline: none;
+  border: solid .7px maroon;
+}
+.textarea1{
+  
+  padding: .9em 3em;
+  width: 500px;
+  margin: 1.8em 0;
+  outline: none;
+  
+  border: solid 1px maroon;
+}
+
+.message{
+  padding: 4em 4em;
+  border: solid 1px maroon;
+  outline: none;
+}
+.form{
+  margin-top: 2em;
+  box-shadow: 2px 2px 2px 2px rgb(253, 248, 248);
+  width: 45%;
+  margin-left: 3em;
+background-color:#fcfcfc;
+padding: 1em 3em;
+}
+
+.initials{
+  display: flex;
+  gap: 1em;
+}
+.submit{
+  padding: .9em 4em;
+  background-color: maroon;
+  color: white;
+  border: none;
+  border-radius: 1px;
+}
+
+.heading{
+  font-size: 1.5rem;
+  color: maroon;
+  text-align: center;
+}
+
+.icontext{
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  
+}
+
+.bgcontact1{
+  background-color:#F2F2F7;
+  outline: none;
+  
+}
+.contactflex{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5em;
+}
+
+.contactinfo{
+  color: #261B41;
+}
+.icon{
+  color: maroon;
+  font-size: 2rem;
+}
+
+.info{
+  color: maroon;
+  font-size: 1.5rem;
+}

@@ -2,6 +2,7 @@
     background:linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.3)), url("../../../magosoimg/1.jpg");
     background-repeat: no-repeat;
     background-position: center center;
+    background-attachment: fixed;
     background-size: cover;
     width: 100vw;
     height: 100vh;
@@ -102,10 +103,10 @@
     color:maroon;
 }
 .border{
-    padding: 2em 2em;
+    padding: 2em 0em;
     border: none;
     box-shadow: 1px 1px 1px 1px lightgray;
-    background-color:rgba(255,255,255,.7);
+    background-color:rgba(255,255,255,.5);
     width: 50%;
     margin: 2em 2em;
     

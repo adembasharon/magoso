@@ -10,6 +10,17 @@ amount:""
 
   })
 
+  let buttonAmount;
+
+  function handler(e){
+buttonAmount = parseInt(e.target.innerText.substring(0,e.target.innerText.length-1));
+console.log(buttonAmount)
+
+  }
+
+
+  
+
 
 
   return (
@@ -59,14 +70,14 @@ amount:""
 <div className={styles.customize}>
 
 <div className={styles.direct}>
-  <button className={styles.items}>200$ </button>
-  <button className={styles.items}>200$</button>
-  <button className={styles.items}>200$</button>
-  <button className={styles.items}>200$</button>
-  <button className={styles.items}>200$</button>
-  <button className={styles.items}>200$</button>
-  <button className={styles.items}>200$</button>
-  <button className={styles.items}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>20$ </button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
+  <button className={styles.items} onClick={(e)=>handler(e)}>200$</button>
 </div>
 
 <div>

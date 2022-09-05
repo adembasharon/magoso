@@ -1,7 +1,7 @@
 import React from 'react';
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 
-const Payment = () => {
+const Payment = ({amount}) => {
 
 
   return (
@@ -13,7 +13,7 @@ const Payment = () => {
                         purchase_units: [
                             {
                                 amount: {
-                                    value: "1.99",
+                                    value: {amount},
                                 },
                             },
                         ],
