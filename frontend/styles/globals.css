@@ -52,4 +52,24 @@ body{
   height:100%h;
   width:100%
 }
+/* BLOG POSTS */
+.bog_container{
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  flex-wrap: wrap;
+}
+.blog_single_post{
+  width: 33%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.bog_container button{
+  border-radius: 4%;
+  padding: .2em 0;  
+}
 
+.bog_container p{
+  width: 40%;
+}

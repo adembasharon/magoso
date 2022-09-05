@@ -1,4 +1,5 @@
-import Contact from "./contact/contact";
+import BlogPost from "./blog";
+
 
 import Head from "next/head";
 
@@ -25,7 +26,7 @@ export default function Home() {
         ></script>
       </Head>
       
-        <Contact />
+        <BlogPost/>
 
   
     </div>
