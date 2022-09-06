@@ -63,6 +63,8 @@ router.get("/find/:id", async(req,res)=>{
         res.status(404).json(err)
 
     }
+
+
 })
 
 
@@ -80,4 +82,9 @@ router.get("/", async(req,res)=>{
     }
 })
 
+
+
+
+
+module.exports=blogs
 
