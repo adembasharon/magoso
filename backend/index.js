@@ -4,6 +4,8 @@ require("dotenv").config()
 const dotenv=require("dotenv")
 const port=process.env.PORT;
 const mongoose=require("mongoose")
+const blogRoutes=require("./routes/blog")
+
 const mpesaRoutes=require("./routes/mpesa")
 dotenv.config()
 mongoose.connect(process.env.MONGO_URL)
@@ -16,6 +18,7 @@ console.log("DB connected")
 
 app.use(express.json())
 app.use("/api",mpesaRoutes);
+app.use("/api" , blogRoutes)
 
 app.listen(port,()=>{
     console.log(`application is running on port ${port}`)
