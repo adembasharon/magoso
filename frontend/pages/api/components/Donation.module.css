@@ -108,7 +108,7 @@
     box-shadow: 1px 1px 1px 1px lightgray;
     background-color:rgba(255,255,255,.5);
     width: 50%;
-    margin: 2em 2em;
+    /* margin: 2em 2em; */
     
 }
 
@@ -119,4 +119,42 @@
     color: white;
     border: none;
     border-radius: 1px;
+}
+
+
+@media  (max-width: 1042px) {
+
+    .border{
+        width: 100%;
+
+    }
+.img{
+    width: 900px;
+    margin: 0 auto;
+}
+.title{
+    font-size: 1.4rem;
+}
+
+.credential1{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.credential2{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.customize{
+    display: flex;
+    flex-direction: column;
+}
+
+.direct{
+    width: 90%;
+}
+
 }

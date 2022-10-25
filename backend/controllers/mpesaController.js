@@ -19,7 +19,7 @@ const newPassword = () => {
 
 exports.token = (req, res, next) => {
   const url = "https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials";
-  auth =
+  const auth =
     "Basic" + " " +
     Buffer.from(consumerkey + ":" + consumersecret).toString("base64");
 
@@ -28,7 +28,8 @@ exports.token = (req, res, next) => {
   }
   axios.get(url, {
     headers: headers,
-  }).then((response) => {
+  })
+  .then((response) => {
     let data = response.data;
     let access_token = data.access_token;
     req.token = access_token;

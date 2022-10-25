@@ -13,7 +13,7 @@ const Payment = ({amount}) => {
                         purchase_units: [
                             {
                                 amount: {
-                                    value: {amount},
+                                    value:{amount},
                                 },
                             },
                         ],
